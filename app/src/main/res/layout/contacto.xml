@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Contacto"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presidencia Municipal"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="70dp"
+                android:layout_height="82dp"
+                android:background="@drawable/escudo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="Tel. 627 527 4700"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="Horario de atención 9:00 - 17:00 (Lun-Vie)"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="http://www.hidalgodelparral.gob.mx"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="0.34">
+
+        <TextView
+            android:id="@+id/txt_junta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Junta Municipal de Agua y Saneamiento"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btn_junta"
+                android:layout_width="71dp"
+                android:layout_height="75dp"
+                android:background="@drawable/jmas" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="Tel. 627 522 0213"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+                <TextView
+                    android:id="@+id/txt_horario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="Horario de atención 8:00 - 16:00 (Lun-Vie)"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+                <TextView
+                    android:id="@+id/txt_web_junta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:text="http://www.jmaschih.gob.mx"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.64"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:gravity="center"
+            android:text="Aplicación desarrollada por alumnos de la Universidad Tecnologica de Parral"
+            android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="116dp"
+            android:layout_height="119dp"
+            android:background="@drawable/ingenieria" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="&quot;Somos TIC's&quot;"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="22dp"
+            android:layout_height="47dp"
+            android:layout_weight="0.08"
+            android:background="@drawable/chihuahuasmall" />
+    </LinearLayout>
+
+</LinearLayout>

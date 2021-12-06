@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_edit_usuario"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/usr"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/muestra_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Bienvenido FULANO"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageButton
+            android:id="@+id/btn_salir"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.03"
+            android:background="@drawable/btn_salir"
+            tools:layout_editor_absoluteX="339dp"
+            tools:layout_editor_absoluteY="531dp" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="¿Que deseas reportar?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_lampara"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_lampara2" />
+
+            <TextView
+                android:id="@+id/txt_lampara"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lampara Fundida"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_basura"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_basura2" />
+
+            <TextView
+                android:id="@+id/txt_basura"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Recolección de Basura"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_contacto"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_enlace2" />
+
+            <TextView
+                android:id="@+id/txt_contacto"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contacto Directo"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.70"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btn_bacheo"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_bache" />
+
+            <TextView
+                android:id="@+id/txt_bacheo"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Problema Bacheo"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_fugas"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_agua" />
+
+            <TextView
+                android:id="@+id/txt_fuga"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Reporte Fuga de Agua"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_comentarios"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:background="@drawable/btn_denuncia2" />
+
+            <TextView
+                android:id="@+id/txt_denucia"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Comentarios ó Sugerencias"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

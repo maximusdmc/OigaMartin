@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/layout_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <fragment
+            android:id="@+id/mapa"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agrega una descripción a tu reporte ( 240 caracteres)"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ingresa_reporte"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLength="240"
+            android:maxLines="4"
+            android:minLines="4"
+
+            android:overScrollMode="always"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:selectAllOnFocus="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="1688dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/set_picture"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/camara"
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="0.09"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_enviar"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/enviar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

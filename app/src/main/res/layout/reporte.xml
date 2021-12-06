@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <fragment
+            android:id="@+id/mapa"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:cameraTargetLat="26.9317835"
+
+            app:cameraTargetLng="-105.6666166"
+            app:cameraTilt="45"
+            app:cameraZoom="14"
+            app:mapType="normal"
+            app:uiZoomControls="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agrega una descripción a tu reporte ( 240 caracteres)"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ingresa_reporte"
+            android:layout_width="394dp"
+            android:layout_height="match_parent"
+
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLength="240"
+            android:maxLines="4"
+            android:minLines="4"
+
+            android:overScrollMode="always"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:selectAllOnFocus="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="1688dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/set_picture"
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/camara"
+            android:scaleType="fitXY"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_google_signin_btn_text_light_focused"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_enviar"
+            android:layout_width="63dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="false"
+            android:background="@drawable/enviar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
